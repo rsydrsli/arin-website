@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arin's Profile</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+	body {
+    cursor: url("C:\Users\arina nadirah\website\pinkwand.png")
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#4B0082;
+    color: #FFFFF0;
+    padding: 1rem 2rem;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-style: italic;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #FFFFF0;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #DB7093;
+}
+
+#hero {
+    background: linear-gradient(to right, #FFF8DC, #FFB6C1);
+    color: maroon;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #DB7093;
+    color: #FFFFF0;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    background: #C71585;
+}
+.audio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #f9f9f9;
+}
+audio {
+    width: 300px; 
+    background-color: pink; 
+    border: 2px solid #ff69b4; 
+    border-radius: 10px;
+    padding: 5px;
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    text-align: left;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #C71585;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-bullet ul {
+            list-style-type: none;
+            position: relative;
+            padding-left: 1.5em;
+}
+
+.custom-bullet ul::before {
+            content: "💌"; 
+            position: absolute;
+            left: 0;
+        }
+		
+section {
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+.gallery-gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem;
+    scroll-snap-type: x mandatory; 
+}
+
+.gallery-gallery::-webkit-scrollbar {
+    height: 8px; 
+}
+
+.gallery-gallery::-webkit-scrollbar-thumb {
+    background: #C71585; 
+    border-radius: 10px; 
+}
+
+.gallery {
+    background: #FFF0F5;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    flex: 0 0 auto; 
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    scroll-snap-align: center; 
+}
+
+.gallery:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-photo {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.skills-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.skills-list li {
+    background: #FFF8DC;
+    color: maroon;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.family-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+	scroll-snap-align: center;
+}
+.family-gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem;
+    scroll-snap-type: x mandatory; 
+}
+
+.family-gallery::-webkit-scrollbar {
+    height: 8px; 
+}
+
+.family-gallery::-webkit-scrollbar-thumb {
+    background: #C71585; 
+    border-radius: 10px; 
+}
+
+.family:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.family-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #C71585;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #4B0082;
+    color: #FFFFF0;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+img {
+    cursor: zoom-in;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">&#127804; ARIN'S WORLD</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#family">Family</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>&#128007; Welcome to Arin's World &#128007;</h1>
+            <p>Dig deeper into my background, experiences and skills >></p>
+            <a href="#gallery" class="btn">View Gallery</a>
+        </div>
+    </section>
+	
+	<section>
+	<audio controls autoplay loop>
+		<source src="backgroundmusic.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	</section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="profile pic.jpeg" alt="Profile Picture" class="profile-pic">
+            <ul class="custom-bullet">
+			<ul>Hello there!! My name is Nur Arina Nadirah but you can call me Arin. I am a 20 years old and currently finishing up my studies as a part 5 student in UiTM Rembau, taking Diploma in Information Management.</ul>
+			<ul>I currently live in Kuala Lumpur with my mom and dad. I was born in Taiping, Perak. However, my hometown is in Kuala Kangsar. I like staying in the countryside as it is more calm and peaceful compared to the city.</ul>
+			<ul>Some of the things I enjoy doing are spending time with family and friends, listening to music, going out, shopping, baking and receiving flowers. I show my love by giving gifts and spending quality time. My fears include being alone, losing the people I love and the ocean. I have basic skills in playing the piano and swimming. I love learning new things, growing as a person and making new friends.</ul>
+        </div>
+    </section>
+
+    <section id="education">
+    <h2>Education</h2>
+    <p>2008 - 2010 | Kindergarten | Tadika Adik-Adik, Sri Rampai <a href="https://www.google.com/search?q=Tadika+Adik-Adik+Sri+Rampai" target="_blank" class="btn"> >> </a></p>
+    <p>2011 - 2016 | UPSR | Sekolah Kebangsaan 2, Taman Keramat <a href="https://www.google.com/search?q=Sekolah+Kebangsaan+2+Taman+Keramat" target="_blank" class="btn"> >> </a></p>
+    <p>2017 - 2022 | Checkpoint, PT3, IGCSE & SPM | MARA Junior Science College, Kuantan <a href="https://www.google.com/search?q=MARA+Junior+Science+College+Kuantan" target="_blank" class="btn"> >> </a></p>
+    <p>2022 - now  | Diploma | UiTM Cawangan Negeri Sembilan Kampus Rembau <a href="https://www.google.com/search?q=UiTM+Rembau" target="_blank" class="btn"> >> </a></p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>Internship at Mask Team - A public relations, talent and event management company. Assigned the Human Resources Department, assisting with finance, social media content creation, and other company operations. I was involved in the production of a theatre - Andak Bertandak, 2024, production of a documentary - Jejak Harmoni on YouTube and a press conference - Rossa's 25 Shining Years.</p>
+        <p>In UiTM Rembau, I am in a uniformed unit association named Komander Kesatria. Through this organization I learned how to teach others, speak publicly, manage events and other Kesatria related knowledge.</p>
+    </section>
+
+    <section id="family">
+        <h2>Family</h2>
+        <p>My family is small but very loving. My dad is a retired Maritime officer while my mom is a housewife. I have two older brothers, the oldest is now married and has a son which is also my first nephew. My second brother had passed away in late May 2022 due to cancer. I had a cat named Luffie that also passed away in early July 2024.</p>
+        <div class="family-gallery">
+            <a href="family pic 1.jpg" target="_blank">
+			<img src="family pic 1.jpg" alt="Eid Family Photo" class="family-photo"></a>
+            <a href="family pic 2.jpg" target="_blank">
+			<img src="family pic 2.jpg" alt="Ayah and Iman" class="family-photo"></a>
+            <a href="family pic 3.jpg" target="_blank">
+			<img src="family pic 3.jpg" alt="Iman's Birthday" class="family-photo"></a>
+            <a href="family pic 4.jpg" target="_blank">
+			<img src="family pic 4.jpg" alt="At The Airport" class="family-photo"></a>
+			<a href="family pic 5.jpg" target="_blank">
+			<img src="family pic 5.jpg" alt="Late Abang Ngah" class="family-photo"></a>
+			<a href="family pic 6.jpg" target="_blank">
+			<img src="family pic 6.jpg" alt="Late Luffie" class="family-photo"></a>
+        </div>
+    </section>
+
+    <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-gallery">
+	    <div class="gallery">
+			<a href="tadika.jpg" target="_blank">
+			<img src="tadika.jpg" alt="Kindergarten" class="gallery-photo"></a>
+            <h3>Kindergarten</h3>
+            <p> My friends and I before our yearly performance (I'm in the middle)</p>
+        </div>
+		        <div class="gallery">
+			<a href="sekolah rendah.jpg" target="_blank">
+			<img src="sekolah rendah.jpg" alt="Primary School" class="gallery-photo"></a>
+            <h3>Primary School</h3>
+            <p>My classmates during year 6 of primary school</p>
+        </div>
+        <div class="gallery">
+			<a href="highschool photo.jpg" target="_blank">
+			<img src="highschool photo.jpg" alt="Highschool Classmates" class="gallery-photo"></a>
+            <h3>Highschool</h3>
+            <p>My 5D classmates and I at school during covid-19</p>
+        </div>
+		<div class="gallery">
+			<a href="first day.jpg" target="_blank">
+			<img src="first day.jpg" alt="First Day" class="gallery-photo"></a>
+            <h3>Entering UiTM</h3>
+            <p>My family sending me off to college</p>
+        </div>
+        <div class="gallery">
+			<a href="5H.jpg" target="_blank">
+            <img src="5H.jpg" alt="University" class="gallery-photo"></a>
+            <h3>University</h3>
+            <p>Last class picture of 5H classmates.</p>
+        </div>
+		<div class="gallery">
+			<a href="intern photo.jpg" target="_blank">
+			<img src="intern photo.jpg" alt="Internship" class="gallery-photo"></a>
+            <h3>Internship</h3>
+            <p>Me at KLPAC during an theatre show for my industrial training program</p>
+        </div>
+        <div class="gallery">
+			<a href="sketch.jpg" target="_blank">
+			<img src="sketch.jpg" alt="Drawing" class="gallery-photo"></a>
+            <h3>A sketch</h3>
+            <p>One of the portrait drawings I did during my free time</p>
+        </div>
+        <div class="gallery">
+			<a href="cookies.jpg" target="_blank">
+            <img src="cookies.jpg" alt="Cookies" class="gallery-photo"></a>
+            <h3>Cookies</h3>
+            <p>Some semperit I made for Raya</p>
+        </div>
+        <div class="gallery">
+            <a href="second family.jpg" target="_blank">
+			<img src="second family.jpg" alt="Second Family" class="gallery-photo"></a>
+            <h3>Second Family</h3>
+            <p>The group of people who makes my life in Rembau 100 times better</p>
+        </div>
+        <div class="gallery">
+            <a href="komander.jpg" target="_blank">
+			<img src="komander.jpg" alt="Komander" class="gallery-photo"></a>
+            <h3>Komander Kesatria</h3>
+            <p>Me in my uniform</p>
+        </div>
+    </div>
+</section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>Video-editing</li>
+            <li>Photo-editing</li>
+            <li>Illustrating</li>
+            <li>English as a Second Language</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+        <a href="mailto:arinandrh17@gmail.com?subject=Inquiry&body=Hello%20Arin%2C%20I%20have%20a%20question%20about%20your%20portfolio." class="btn">Email Me</a>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Arin's Profile. All rights reserved.</p>
+    </footer>
+</body>
+</html>
